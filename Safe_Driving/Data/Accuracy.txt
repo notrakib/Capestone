@@ -1,0 +1,63 @@
+Xception
+{'Anger': 73.08,
+ 'Closed_Eyes': 100.0,
+ 'Happy': 88.46,
+ 'Neutral': 69.23,
+ 'Open_Eyes': 100.0,
+ 'Yawn': 100.0}
+
+Inception
+{'Anger': 42.31,
+ 'Closed_Eyes': 100.0,
+ 'Happy': 53.85,
+ 'Neutral': 84.62,
+ 'Open_Eyes': 100.0,
+ 'Yawn': 100.0}
+
+Cnn
+{'Anger': 11.54,
+ 'Closed_Eyes': 96.15,
+ 'Happy': 53.85,
+ 'Neutral': 92.31,
+ 'Open_Eyes': 100.0,
+ 'Yawn': 96.15}
+
+DenseNet
+{'Anger': 42.31,
+ 'Closed_Eyes': 100.0,
+ 'Happy': 42.31,
+ 'Neutral': 53.85,
+ 'Open_Eyes': 100.0,
+ 'Yawn': 88.46}
+
+VGG16
+{'Anger': 3.85,
+ 'Closed_Eyes': 100.0,
+ 'Happy': 23.08,
+ 'Neutral': 46.15,
+ 'Open_Eyes': 100.0,
+ 'Yawn': 23.08}
+
+Mobile_Net_V2
+{'Anger': 3.85,
+ 'Closed_Eyes': 96.15,
+ 'Happy': 0.0,
+ 'Neutral': 61.54,
+ 'Open_Eyes': 100.0,
+ 'Yawn': 0.0}
+
+VGG19
+{'Anger': 15.38,
+ 'Closed_Eyes': 100.0,
+ 'Happy': 38.46,
+ 'Neutral': 65.38,
+ 'Open_Eyes': 96.15,
+ 'Yawn': 69.23}
+
+Efficient_B7
+{'Anger': 0.0,
+ 'Closed_Eyes': 0.0,
+ 'Happy': 0.0,
+ 'Neutral': 0.0,
+ 'Open_Eyes': 100.0,
+ 'Yawn': 0.0}

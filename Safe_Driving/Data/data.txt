@@ -1,0 +1,8 @@
+Class_1 = fear, sadness
+Class_2 = happy
+Class_3 = closed eyes
+Class_4 = open eyes
+Class_5 = yawn (surprised)
+Class_6 = anger, disturbed
+
+

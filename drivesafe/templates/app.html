@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Display Webcam Stream</title>
+</head>
+
+<style>
+    body {
+        margin: 0px;
+
+    }
+
+    div {
+        background-image: url("{% static 'images/Adobe.jpg' %}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100vh;
+        margin: 0px;
+    }
+
+    a {
+        background-color: rgb(123, 59, 184);
+        color: aliceblue;
+        font-size: 30pt;
+        font-weight: bolder;
+        text-decoration: none;
+        text-align: center;
+        align-self: center;
+        border: 2px;
+        border-radius: 20px;
+        width: 140px;
+        height: 60px;
+        margin: 40px;
+
+    }
+</style>
+
+<body>
+    <!-- <img src="{% static 'images/bkgrnd.jpg' %}"> -->
+    <div>
+        <a href="{% url 'start' %}">Start</a>
+        <a href="{% url 'stop' %}">Stop</a>
+
+    </div>
+
+</body>
+
+</html>
