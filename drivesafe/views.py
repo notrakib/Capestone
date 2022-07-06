@@ -5,7 +5,7 @@ from django.views.decorators import gzip
 from django.http import StreamingHttpResponse
 import cv2
 import threading
-import winsound
+# import winsound
 
 
 def index(request):
@@ -60,23 +60,23 @@ def gen(camera):
         frame, current_status, current_status_eye = camera.get_frame()
         face10.append(current_status)
         if len(face10) == 10:
-            for i in range(0, 6):
-                if face10[i] == 'Yawn' and face10[i+1] == 'Yawn' and face10[i+2] == 'Yawn' and face10[i+3] == 'Yawn':
-                    winsound.Beep(1500, 500)
-                elif face10[i] == 'Anger' and face10[i+1] == 'Anger' and face10[i+2] == 'Anger' and face10[i+3] == 'Anger':
-                    winsound.Beep(300, 500)
-                elif face10[i] == 'Happy' and face10[i+1] == 'Happy' and face10[i+2] == 'Happy' and face10[i+3] == 'Happy':
-                    winsound.Beep(700, 500)
+            # for i in range(0, 6):
+            #     if face10[i] == 'Yawn' and face10[i+1] == 'Yawn' and face10[i+2] == 'Yawn' and face10[i+3] == 'Yawn':
+            #         winsound.Beep(1500, 500)
+            #     elif face10[i] == 'Anger' and face10[i+1] == 'Anger' and face10[i+2] == 'Anger' and face10[i+3] == 'Anger':
+            #         winsound.Beep(300, 500)
+            #     elif face10[i] == 'Happy' and face10[i+1] == 'Happy' and face10[i+2] == 'Happy' and face10[i+3] == 'Happy':
+            #         winsound.Beep(700, 500)
 
             face10 = []
 
         eye10.append(current_status_eye)
         if len(eye10) == 10:
-            for j in range(0, 6):
-                if eye10[j] == 'Closed_Eyes' and eye10[j+1] == 'Closed_Eyes' and eye10[j+2] == 'Closed_Eyes' and eye10[j+3] == 'Closed_Eyes':
-                    winsound.Beep(2500, 500)
-                if eye10[j] != 'Open_Eyes' and eye10[j+1] != 'Open_Eyes' and eye10[j+2] != 'Open_Eyes' and eye10[j+3] != 'Open_Eyes':
-                    winsound.Beep(2500, 500)
+            # for j in range(0, 6):
+            #     if eye10[j] == 'Closed_Eyes' and eye10[j+1] == 'Closed_Eyes' and eye10[j+2] == 'Closed_Eyes' and eye10[j+3] == 'Closed_Eyes':
+            #         winsound.Beep(2500, 500)
+            #     if eye10[j] != 'Open_Eyes' and eye10[j+1] != 'Open_Eyes' and eye10[j+2] != 'Open_Eyes' and eye10[j+3] != 'Open_Eyes':
+            #         winsound.Beep(2500, 500)
 
             eye10 = []
 

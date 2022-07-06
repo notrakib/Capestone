@@ -3,7 +3,6 @@ import os
 import numpy as np
 import tensorflow as tf
 from skimage.transform import resize
-import winsound
 
 frequency = 1500
 duration = 500
